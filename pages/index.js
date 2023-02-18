@@ -1,5 +1,25 @@
 import Head from "next/head";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiFillMediumSquare,
+  AiFillMediumCircle,
+  AiFillGithub,
+} from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { useState } from "react";
+import hazal from "../public/hazal.jpeg";
+import code from "../public/code.png";
+import design from "../public/design.png";
+import consulting from "../public/consulting.png";
 import Image from "next/image";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 export default function Home() {
 
@@ -11,6 +31,50 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <section className="min-h-screen">
+        <nav className="py-10 mb-12 flex justify-between dark:text-white">
+            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 mr-20 border-none rounded-md ml-8"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+              Hazal Gültekin
+            </h2>
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+              Developer and designer.
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            I am a 3rd year Computer Engineering student who has been working as a Full Stack Web Developer in a company since the 2nd year and is always eager to improve and learn.
+            You can learn more detailed information about me from the addresses below.
+            </p>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <a href="https://github.com/HazalGultekin"><AiFillGithub/></a>
+              <a href="https://www.linkedin.com/in/hazal-g%C3%BCltekin-7b2607216/"><AiFillLinkedin /></a>
+              <a href="https://medium.com/@hazallgultekin"><AiFillMediumSquare/></a>
+              <a href="https://twitter.com/home"><AiFillTwitterCircle /> </a>
+            </div>
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={hazal} layout="fill" objectFit="cover" />
+            </div>
+          </div>
+
+        </section>
+  
       </main>
     </div>
   );
