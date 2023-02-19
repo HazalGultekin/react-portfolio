@@ -32,7 +32,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Hazal Gültekin</h1>
+            <h1 className="font-burtons lg:text-xl sm:text-sm">Hazal Gültekin</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -41,10 +41,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 mr-20 border-none rounded-md ml-8"
-                  href="#"
-                >
+                <a href="#" className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md lg:ml-8 sm:ml-" >
                   Resume
                 </a>
               </li>
@@ -74,21 +71,34 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+             Hi, I am a 3rd year Computer Engineering student and I am an enthusiasctic 
+              <span className="text-teal-500"> Frontend Developer </span>  & 
+              <span className="text-teal-500"> UI/UX Designer </span> .
+              I can design & build your website as you want. 
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            I have three years of experience in Web Development. I have been working as a Full Stack Web Developer in a company that has been doing web development in the Ruby on Rails ecosystem for 1 year. 
+            At the same time, I've been working on reactjs recently and I've been doing various projects and sharing them on my Github.
             </p>
           </div>
           <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Code your dream project
+              </h3>
+              <p className="py-2">
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
+              <h4 className="py-4 text-teal-600">Programming Languages I Use</h4>
+              <p className="text-gray-800 py-1">Javascript - Reactjs</p>
+              <p className="text-gray-800 py-1">Ruby - Rails</p>
+              <p className="text-gray-800 py-1">CSS - TailwindCSS</p>
+              <p className="text-gray-800 py-1">HTML</p>
+            </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
@@ -99,55 +109,28 @@ export default function Home() {
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
+           
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Career Objective</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+              My aim is to contribute to the corporate development of the company by adapting immediately to the ecosystem of the company 
+              I work for and to equip myself with the new information I will learn.
+              To achieve new achievements both for himself and for the company.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">My Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            Here are some of my most recent projects I've developed. If you want to see the others, you can check my
+              <span className="text-teal-500"> Github </span> account.    
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
